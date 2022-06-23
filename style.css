@@ -55,6 +55,19 @@ input[type=text], password {
   
     border-radius: 5px;
   }
+  #login error{
+    animation-name: show_Login_error;
+    animation-duration: 0.6s;
+   
+  }
+  @keyframes show_Login_error{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
   @media only screen and(max-width: 700px){
     .container{
       grid-template-columns: repeat(1,1fr);
